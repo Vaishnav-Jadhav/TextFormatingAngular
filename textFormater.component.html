@@ -1,0 +1,18 @@
+<div style="width:100%; display: flex; justify-content: center; align-items: top; padding: 7%;">
+   <div class="w-50" style="border: 1px solid black; padding: 5%;">
+    <h2 class="text-center text-info">Text formater</h2>
+    <div>
+        <div>
+            <label for="" class="form-label" style="margin:10px 0px; font-size: 18px;">Select font size</label>
+            <input type="number" class="form-control" [formControl]="selectedSize" placeholder="Enter font size" style="border: 1px solid black;">
+        </div>
+        <div>
+            <label for="" class="form-label" style="margin:10px 0px; font-size: 18px;">Select font Color</label>
+            <input type="color" class="form-control w-25" [formControl]="selectedColor"  id="colorInput" placeholder="Enter font size" style="border: 1px solid black;">
+        </div>
+        <button class="btn btn-dark w-100 my-2" (click)="applyClick()">Apply</button>
+    </div>
+   
+   </div>
+   <h1 class="p-2 text-center my-3" [style.color]="color" [style.fontSize]="size">If you dont sacrifies for what you want then what you want is becomes a sacrifies</h1>
+</div>
